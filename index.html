@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Project</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!doctype html>
+
+<body>
+<h1 id="title">Dog Survey</h1>
+
+<form id="survey-form">
+  <div><p id="description" for="description"> Tell us all about your dog!</p></div>
+ <div class="line">
+   <div class="leftbox"><label id="name-label" for="name">Name :</label></div>
+   <div class="rightbox"><input type="text" id="name" required placeholder="Your Name"></div>
+  </div>
+
+  <div class="line">
+   <div class="leftbox"><label id="email-label" for="email">Email :</label></div>
+      <div class="rightbox"><input type="email" id="email" name="e-mail" required placeholder="e_mayle@email.com"></div> 
+  </div>
+  
+  <div class="line">
+  <div class="leftbox"><label id="number-label" for="number">How many days per week do you walk your dog? :</label></div>
+   <div class="rightbox"><input type="number" id="number" min="0" max="7" placeholder="0"></div>
+  </div>
+  
+  <div class="line">
+   <div class="leftbox"><label for="dropdown">Is your dog an indoor or outdoor dog? :</label></div>
+  <div class="rightbox"><select id="dropdown" name="dropdown" class="dropdown" placeholder="Select One">
+    <option disabled value="Select One" selected>Select One</option>
+    <option value="indoor">Indoor</option>
+    <option value="outdoor">Outdoor</option>
+    <option value="indoor-outdoor">Indoor/Outdoor</option></select>
+  </div>
+  </div>
+  
+  <div class="line">
+   <div class="leftbox"><label for="radio-buttons">Dog Size :</label></div>
+    <div class="rightbox">
+      <ul>
+    <li><label for="small"><input type="radio" name="radio-buttons" value="small" checked>Small</label></li>
+    <li><label for="medium"><input type="radio" name="radio-buttons" value="medium">Medium</label></li>
+    <li><label for="large"><input type="radio" name="radio-buttons" value="large">Large</label></li>
+      </ul>
+  </div>
+  </div>
+  
+  <div class="line">
+  <div class="leftbox"><label for="check-box">What does your dog enjoy? (Check all that apply) :</label></div>
+    
+   <div class="rightbox"><ul>
+    <li><label for="park"><input id="park" type="checkbox" name="check-box" value="park">Parks</label></li>
+    <li><label for="beach"><input id="beach" type="checkbox" name="check-box" value="beach">Beaches</label></li>
+    <li><label for="hiking"><input id="hiking" type="checkbox" name="check-box" value="hiking">Hiking</label></li>
+    <li><label for="petstores"><input id="petstores" type="checkbox" name="check-box" value="pet-stores">Pet Stores</label></li>
+    <li><label for="kayaking"><input id="kayaking" type="checkbox" name="check-box" value="kayaking">Kayaking</label></li>
+    <li><label for="walks"><input id="walks" type="checkbox" name="check-box" value="walks">Walks</label></li>
+    </ul>
+  </div>
+  </div>
+  
+  <div class="line">
+  <div class="leftbox">
+    <label for="comments">Additional Comments :</label></div>
+    <div class="rightbox"><textarea name="comments">Anything else you'd like to tell us about your dog?</textarea></div>
+  </div>
+  
+  
+  <div class="submit-button">
+  <button type="submit" id="submit" form="survey-form">Submit</button>
+  </div>
+
+</form>
+</body>
+  
+  
+
+</body>
+
+</html>
